@@ -48,3 +48,24 @@ body {
     }
 }
 
+.nav-primary {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: grey;
+    background-image: 
+        linear-gradient(
+            to bottom,
+            rgba(118, 193, 157, 0),
+            rgba(118, 193, 157, 0) 90%,
+            rgba(118, 193, 157, 100) 90%,
+            rgba(118, 193, 157, 100) 100%
+        );
+    clear: both;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    z-index: 1;
+}
+
