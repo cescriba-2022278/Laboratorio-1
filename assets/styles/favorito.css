@@ -1,0 +1,30 @@
+.container {
+    position: relative;
+}
+
+@media (max-width: 769px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px){
+    .container {
+        width: 100%;
+    }
+}
+
+section {
+    display: flex;
+    width: 500;
+    height: 330;
+    position: relative;
+}
+
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
