@@ -4,58 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
+    <link rel="stylesheet" href="/assets/styles/portafolio.css">
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-headert">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Menu</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div>
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                            <ul class="nav nav-pills">
-                                <li role="presentation" class="active"><a href="#about">Sobre mi</a></li>
-                                <li role="presentation"><a href="#proyectos">Proyectos</a></li>
-                                <li role="presentation"><a href="#habilidades">Habilidades</a></li>
-                                <li role="presentation"><a href="#contacto">Contacto</a></li>
-                                <li role="presentation"><a href="#musica">Musica</a></li>
-                            </ul>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <nav>
+        <ul>
+            <li><a href="#sobremi">Sobre mi</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#musica">Musica</a></li>
+        </ul>
     </nav>
-    <div class="container-fluid">
-        <div class="jumbotron" id="about">
-            <img class="center-block img-circle img-responsive" id="my" src="/assets/imagenes/Programador.png" alt="Cesar Andre Escriba">
-            <p class="text-center">Estudiante - Gamer - Programador</p>
-            <h1 class="text-center">Cesar Andre Escriba Garcia</h1>
-            <div class="jumbotron" id="Proyectos">
-                <h2 class="text-center">Proyectos</h2>
-                <div class="row">
-                    <div class="col-md-6 center">
-                        <div id="inventario">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="jumbotron" id="habilidades">
-            <h2 class="text-center">Habilidades</h2>
-            <p>
-                <img src="/assets/imagenes/MySQL.jpg" width="175" height="50">
-                <img src="/assets/imagenes/Java.jpg" width="145" height="50">
-                <img src="/assets/imagenes/HTML5.png" width="141" height="50">
-                <img src="/assets/imagenes/css.png" width="141" height="50">
-                <img src="/assets/imagenes/Js.png" width="115" height="50">
-            </p>
-          </div>
-    </div>
+
+    <header>
+        <h1>Cesar Andre Escriba</h1>
+    </header>
+
+    <section id="sobremi">
+        <h2>sobre mi</h2>
+        <p><img src="/assets/imagenes/Programador.png" width="326" height="200">
+        <p>Estudiante - Gamer - Programador</p>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+    </section>
+
+    <section>
+        <h2>Proyecto 1</h2>
+        <p><img src="/assets/imagenes/ImagenP1.png" alt="Imagen 1"  width="326" height="200"><img src="/assets/imagenes/ImagenP2.png" alt="Imagen 2"  width="500" height="200"></p>
+        <p>El proyecto tenia como tema principal mostrar y informar algunos de los lugares turisticos mas famosos de guatemala informandoles lo mejor posible de cada ubicacion</p>
+    </section>
+
+    <section>
+        <h2>Proyecto 2</h2>
+        <p><img src="/assets/imagenes/ImagenP3.png" width="700" height="500"></p>
+        <p>Mi proyecto de una tienda de videojuegos fue de los mejor diseñados centrado mas que todo en dar el mejor servicio a los clientes para poder informarlos de los tipos de juegos que existen al igual que proporcionarles informacion de diferentes empresas</p>
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <p>
+            <img src="/assets/imagenes/MySQL.jpg" width="175" height="50">
+            <img src="/assets/imagenes/Java.jpg" width="145" height="50">
+            <img src="/assets/imagenes/HTML5.png" width="141" height="50">
+            <img src="/assets/imagenes/css.png" width="100" height="50">
+            <img src="/assets/imagenes/Js.png" width="115" height="50">
+        </p>
+    </section>
+
+    
+        
+    <form id="contacto">
+        <h2>Contacto</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+     
+        <label for="correo">correo Electronico:</label>
+        <input type="email" id="correo" name="correo" required>
+     
+        <label for="telefono">Numero de telefono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+     
+        <button type="button">Enviar</button>
+    </form>
+
+    <section id="musica">
+        <h2>Musica</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </section>
 </body>
 </html>
