@@ -69,3 +69,40 @@ body {
     z-index: 1;
 }
 
+.nav-primary li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;
+}
+
+.nav-primary a {
+    color: aliceblue;
+    display: block;
+    font-size: 110%;
+    font-weight: bold;
+    overflow: hidden;
+    padding: 0.99em 1.5rem;
+    position: relative;
+    text-decoration: none;
+        -moz-transition: background 0.4s ease-out;
+        -o-transition: background 0.4s ease-out;
+        -webkit-transition: background 0.4s ease-out;
+    transition: background 0.4s ease-out;
+}
+
+.nav-primary a::after{
+    background: grey;
+    background-image: 
+        linear-gradient(
+            rgba(165, 185, 165, 0.281),
+            rgba(30, 32, 31, 0.596) 90%,
+            rgba(78, 127, 103, 100) 90%,
+            rgba(78, 127, 103, 100) 100%
+        );
+    overflow: hidden;
+    position: relative;
+}
+
+
