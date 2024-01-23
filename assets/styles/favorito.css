@@ -28,3 +28,23 @@ section img {
     opacity: .8;
     transition: .5s ease;
 }
+
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+body {
+    background-color: black;
+}
+
+@media (min-width:600px){
+    header{
+        flex-direction: row;
+        padding: opx 30px;
+        justify-content: space-between;
+    }
+}
+
