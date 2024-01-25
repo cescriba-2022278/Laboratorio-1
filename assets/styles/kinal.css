@@ -48,3 +48,69 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.inner-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 450px;
+}
+
+.boxy:nth-child(1) {
+  width: 50%;
+  min-height: 600px;
+  background: url("https://www.centralizedsolutions.com/wp-content/uploads/2021/01/partners.jpg") bottom no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 999;
+}
+
+.boxy:nth-child(2) {
+  width: 50%;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+#slider {
+  overflow: hidden;
+  margin-left: -20px;
+}
+
+#slider figure ul li {
+  width: 20%;
+  float: left;
+  list-style: none;
+  text-align: center;
+}
+
+ul li img {
+  border-radius: 50%;
+  padding: 10px;
+}
+
+ul li h4 {
+  color: #354757;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+ul li p {
+  font-size: 20px;
+  width: 80%;
+  margin: 0 auto;
+  color: #6d85a8;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  animation-name: slider;
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  animation-delay: -10s;
+  animation-iteration-count: infinite;
+}
