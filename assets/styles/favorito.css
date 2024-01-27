@@ -123,3 +123,40 @@ body {
         box-shadow: inset 0 -5px 0 0 rgba(206, 223, 206, 0.281);
     }
 }
+
+/* Estilo para la lista principal */
+.nav-primary ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilo para los elementos de la lista principal */
+.nav-primary li {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-primary a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-primary ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.nav-primary ul ul li {
+    display: block;
+}
+
+.nav-primary li:hover > ul {
+    display: block;
+}
+
